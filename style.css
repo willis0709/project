@@ -1,0 +1,90 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html,body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px #3e92cc;
+  background-color: #f4f4f7;
+  border-radius: 10px;
+}
+.local {
+  justify-content: flex-end;
+}
+.user {
+  display: flex;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  align-items: flex-start;
+}
+.user .avater {
+  width: 60px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.user .pic {
+  border-radius: 50%;
+  overflow: hidden;
+  /* overflow: hidden; */
+  
+}
+.user .pic img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+
+  
+}
+.user .txt {
+  background-color: #aaa;
+  padding: 16px;
+  border-radius: 10px;
+}
+.remote .txt {
+  margin-left: 20px;
+  margin-right: 80px;
+  background-color: gray;
+  color: #fff;
+  position: relative;
+  
+}
+.local .txt {
+  margin-right: 20px;
+  margin-left: 80px;
+  order: -1;
+  background-color: #3e92cc;
+  color: #fff;
+  position: relative;
+  
+}
+
+.remote .txt::before,
+.local .txt::before{
+  content: '';
+  position: absolute;
+  top: 10px ;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.remote .txt::before{
+  border-right: 10px solid gray;
+  left: -10px;
+
+}
+.local .txt::before{
+  border-left: 10px solid #3e92cc;
+  right: -10px;
+}/* No CSS *//*# sourceMappingURL=style.css.map */
